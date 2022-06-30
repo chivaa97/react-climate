@@ -1,0 +1,17 @@
+#contenedor {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+#tarjeta {
+  background: rgba(255, 255, 255, 0.048);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.048) 0px 20px 40px;
+  backdrop-filter: blur(5px);
+  border-radius: 30px;
+}

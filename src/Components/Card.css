@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#tarjeta {
+  background: rgba(255, 255, 255, 0.048);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.048) 0px 20px 40px;
+  backdrop-filter: blur(5px);
+  border-radius: 30px;
+
+}
+
+#contenedor {
+  margin-top: 100px;
+  /* background-color: red; */
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* background: url("../img/fondo.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; */
+}
+
+#caja1,
+#caja2,
+#caja3 {
+  animation: 1s ease 0s 1 normal forwards running iqCasf;
+  width: auto;
+  height: 150px;
+  position: relative;
+  text-align: center;
+}
+
+#caja1 {
+  font-family: 'Cinzel', serif;
+  height: auto;
+  z-index: 1;
+  /* position: relative; */
+  background: linear-gradient(180deg, #000000ce, #00000031);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#caja1 h2 {
+  font-size: 80px;
+}
+
+.fecha {
+  font-size: 20px;
+  font-family: 'Almarai', sans-serif;
+  /* background-color: red; */
+  position: absolute;
+  bottom: 1px;
+  right: 10px;
+  background: linear-gradient(180deg, #00000075, #00000096);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.without-data {
+  color: black;
+  font-size: 50px;
+  text-shadow: 2px 2px 2px white;
+  font-family: 'Diplomata SC', cursive;
+  /* font-family: 'Almarai', sans-serif; */
+}
+
+#caja2 {
+  font-family: "Exo 2", sans-serif;
+  z-index: 10;
+  background: transparent;
+  font-size: 1rem;
+}
+
+#caja2 img {
+  bottom: 20px;
+  top: 0;
+  width: 100px;
+  height: 100px;
+}
+
+#temperatura-valor {
+  color: #424153;
+}
+
+#temperatura-descripcion {
+  color: #cccccc;
+  text-shadow: 1px 1px 1px black;
+}
+
+#viento-velocidad {
+  color: #cccccc;
+  text-shadow: 1px 1px 1px black;
+  font-family: 'Permanent Marker', cursive;
+  bottom: 10px;
+}
+
+#caja3 {
+  padding: 50px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 1rem;
+}
+
+#caja3 h3 {
+  color: #424153;
+}
+
+@media only screen and (max-width: 750px) {
+  #caja1 {
+    font-family: "Exo 2", sans-serif;
+    top: 50px;
+    height: auto;
+    z-index: 1;
+    /* position: relative; */
+    font-size: 40px;
+    background: linear-gradient(180deg, #0000008a, #ffffff1e);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #caja1 {
+    font-family: 'Cinzel', serif;
+    height: auto;
+    z-index: 1;
+    /* position: relative; */
+    background: linear-gradient(180deg, #000000ce, #00000031);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  #caja1 h2 {
+    font-size: 50px;
+  }
+
+  #tarjeta {
+    height: 500px;
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #ubicacion {
+    margin-top: 0;
+    padding-bottom: 40px;
+  }
+
+  #caja1,
+  #caja2,
+  #caja3 {
+    text-align: center;
+  }
+
+  #caja3 {
+    font-family: "Exo 2", sans-serif;
+    font-size: 1rem;
+  }
+}
