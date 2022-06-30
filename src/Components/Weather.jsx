@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Form from "./Form";
 import "./Weather.css";
 import Card from "./Card";
@@ -15,7 +15,7 @@ const Weather = () => {
   const [loading, setLoading] = useState(false);
   const [show, setShow] = useState(false);
   const [location, setLocation] = useState("");
-
+  location ="";
   const getLocation = async(loc) => {
     setLoading(true);
     setLocation(loc);
