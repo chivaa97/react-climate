@@ -14,8 +14,7 @@ const Weather = () => {
   const [forecast, setForecast] = useState([]);
   const [loading, setLoading] = useState(false);
   const [show, setShow] = useState(false);
-  let [location, setLocation] = useState("");
-  location="f";
+  let [setLocation] = useState("");
   const getLocation = async(loc) => {
     setLoading(true);
     setLocation(loc);
@@ -25,6 +24,7 @@ const Weather = () => {
     urlWeather = urlWeather + cityUrl + loc;
 
     await fetch(urlWeather).then((response)=>{
+      // eslint-disable-next-line no-throw-literal
       if(!response.ok) throw {response}
       return response.json();
     }).then((weatherData)=>{
@@ -39,6 +39,7 @@ const Weather = () => {
     //Forecast
     urlForecast = urlForecast + cityUrl + loc;
     await fetch(urlForecast).then((response)=>{
+      // eslint-disable-next-line no-throw-literal
       if(!response.ok) throw {response}
       return response.json();
     }).then((forecastData)=>{
