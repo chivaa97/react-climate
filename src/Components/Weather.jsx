@@ -14,8 +14,8 @@ const Weather = () => {
   const [forecast, setForecast] = useState([]);
   const [loading, setLoading] = useState(false);
   const [show, setShow] = useState(false);
-  const [location, setLocation] = useState("");
-  location ="";
+  let [location, setLocation] = useState("");
+  location="f";
   const getLocation = async(loc) => {
     setLoading(true);
     setLocation(loc);
